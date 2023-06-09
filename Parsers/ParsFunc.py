@@ -21,7 +21,8 @@ async def get_count_message_for_dialog(app, dialogs):
     for dialog in dialogs:
         mes_count = await app.get_chat_history_count(dialog)
 
-        if mes_count > 1 and mes_count < 13:
+        if mes_count > 1 and mes_count < 15\
+                :
             # print(mes_count)
             first_mes_answer_user.append(dialog)
 
