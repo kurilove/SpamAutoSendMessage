@@ -38,6 +38,6 @@ while True:
         except Exception as ex:
             print(ex)
     scroll_number += 1
-    print_progress_bar(150)
+    print_progress_bar(50)
     print(
         f"scroll_number,{count_send_voice}/{count_send_condition}-------------------------------------SCROLL NUMBER------------------------------------")

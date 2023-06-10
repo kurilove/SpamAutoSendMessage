@@ -8,8 +8,6 @@ async def get_account_dialogs(app):
         if dialog.unread_messages_count != 0:
             dialogs.append(dialog.chat.username)
 
-
-
     user_answer = await get_count_message_for_dialog(app, dialogs)
     # print(user_answer)
 
@@ -21,8 +19,7 @@ async def get_count_message_for_dialog(app, dialogs):
     for dialog in dialogs:
         mes_count = await app.get_chat_history_count(dialog)
 
-        if mes_count > 1 and mes_count < 15\
-                :
+        if mes_count > 1 and mes_count < 19:
             # print(mes_count)
             first_mes_answer_user.append(dialog)
 
